@@ -121,10 +121,11 @@
             </div>
 
             <div class="col-md-4">
-                <h3>Topics Extracted</h3>
-                <p> A topic is a collection of related words that are most important to the novel. Here the top 5 topics are displayed in order of decreasing significance. </p>
-        <p> The Sentiment Arch graph follows the sentiment throughout the novel.</p>
-
+                <h3>What These Picures Mean</h3>
+                <p> The Sentiment Arch graph follows the sentiment throughout the novel. Each sentence in the novel is labeled a positive, negative, or neutral sentiment value using a sentiment classifier. To get the smooth arches, Timbr uses a fourier transform and a series of signal filters to get rid of the noise and get the overarching shape of the novel's sentiment. The current implementation uses an r package called <a href = "https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html"> Syuzhet</a> written by Matthew Jockers in 2015
+                </p>
+                <p> Timbr uses a topic extraction technique called <a href = "http://derekgreene.com/slides/nmf_insight_workshop.pdf"> Non Negative Matrix Factoriazation </a> to get groups of words that represent the most significant topics in the novel. This technique is not perfect yet, but it yields consistent results that make sense with what we know the novels to be about, with the exception of some noise. </p>  
+                <p> The first bubble illustraction shows each extracted topic in its own bubble, with the corresponding synthesizer in the in the bubble that matches its color in the next illustration. Timbr currently uses a few hundred synthesizers from <a href = "http://www.apple.com/logic-pro/"> Apple Logic </a>. It matches synthesizers to topics based on the synthesizer titles (eg Power, Mystery, Drowning) using a knowledge base of word embeddings extracted from the Google News corpus using the free tool <a href = "https://code.google.com/p/word2vec/"> Word2Vec </a> .
 
             </div>
 
@@ -146,7 +147,7 @@
 
             <div class="col-sm-3 col-xs-6">
                 <a href="alice-in-wonderland.html">
-                    <img class="img-responsive img-hover img-related" src="img/macbeth.png" alt="Alice In Wonderland by Lewis Carroll">
+                    <img class="img-responsive img-hover img-related" src="img/alice.png" alt="Alice In Wonderland by Lewis Carroll">
                 </a>
             </div>
 
