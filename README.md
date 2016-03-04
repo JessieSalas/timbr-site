@@ -1,6 +1,6 @@
-# [Timbr](http://timbr.ml/) 
+# [Tambr](http://tambr.ml/) 
 
-[Timbr](http://timbr.ml/) is a software for creating music from text. 
+[Tambr](http://tambr.ml/) is a software for creating music from text. 
 
 ## How it Works 
 Timbr runs a topic extraction algorithm to get topics from a text, then it finds synthesizers that sound the most like the topics by using a search engine implemented from human-labeled training data and on word-embeddings extracted from Google Word2Vec
